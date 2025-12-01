@@ -111,7 +111,9 @@ class AnalisisWacanaKritis:
         plt.axis('off')
         plt.title('Word Cloud: Olivia Rodrigo & Y2K dalam Media Massa', fontsize=16)
         plt.tight_layout()
-        plt.show()
+        plt.savefig('wordcloud.png', dpi=300, bbox_inches='tight')
+        plt.close()
+        print("✓ Word cloud disimpan ke: wordcloud.png")
     
     def visualisasi_sentimen_media(self):
         """Visualisasi sentimen per media"""
@@ -124,7 +126,9 @@ class AnalisisWacanaKritis:
         plt.ylabel('Skor Sentimen')
         plt.xticks(rotation=45, ha='right')
         plt.tight_layout()
-        plt.show()
+        plt.savefig('sentimen_media.png', dpi=300, bbox_inches='tight')
+        plt.close()
+        print("✓ Grafik sentimen disimpan ke: sentimen_media.png")
         
         return media_sentiment
     

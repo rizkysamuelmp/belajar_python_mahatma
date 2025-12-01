@@ -14,6 +14,8 @@ Library yang digunakan:
 import pandas as pd
 from textblob import TextBlob
 from wordcloud import WordCloud
+import matplotlib
+matplotlib.use('Agg')  # Backend non-GUI untuk WSL
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -352,8 +354,10 @@ class AnalisisWacanaNostalgia:
             plt.title('Word Cloud: Wacana Nostalgia dalam Media', fontsize=18, pad=20)
             # [EKSEKUSI-12.9] plt.tight_layout() untuk optimasi layout
             plt.tight_layout()
-            # [EKSEKUSI-12.10] plt.show() untuk tampilkan plot
-            plt.show()
+            # [EKSEKUSI-12.10] Simpan ke file PNG untuk WSL
+            plt.savefig('wordcloud_nostalgia.png', dpi=300, bbox_inches='tight')
+            print("\n✓ Visualisasi word cloud disimpan ke: wordcloud_nostalgia.png")
+            plt.close()
     
     # [EKSEKUSI-5] Method ini dipanggil dari main block
     def laporan_analisis_wacana(self):
