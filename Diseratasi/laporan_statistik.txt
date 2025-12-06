@@ -1,0 +1,20 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║                    LAPORAN STATISTIK ARTIKEL                     ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📊 STATISTIK UMUM:
+   Total Artikel        : 30
+   Media Unik           : 12
+   Rata-rata Panjang    : 41 karakter
+   Kutipan
+
+📅 PERIODE PUBLIKASI:
+   Januari - November 2025
+
+📰 MEDIA TERBANYAK:
+   1. BookRetreats                   : 16 artikel
+   2. IndoIndians                    :  3 artikel
+   3. What's New Indonesia           :  2 artikel
+   4. PR Newswire APAC               :  1 artikel
+   5. Laotian Times                  :  1 artikel
